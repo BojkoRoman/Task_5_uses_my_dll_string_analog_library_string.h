@@ -1,0 +1,23 @@
+﻿Build started 31.03.2014 5:53:37.
+     1>Project "E:\Roman\Project Visual\Task_5\Task_5\Task_5.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\Task_5.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt function_string.cpp
+         function_string.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Roman\Project Visual\Task_5\Debug\Task_5.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Task_5.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\Roman\Project Visual\Task_5\Debug\Task_5.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Roman\Project Visual\Task_5\Debug\Task_5.lib" /MACHINE:X86 Debug\function_string.obj
+         Debug\Task_5.obj
+         myString.obj
+         LINK : E:\Roman\Project Visual\Task_5\Debug\Task_5.exe not found or not built by the last incremental link; performing full link
+         Task_5.vcxproj -> E:\Roman\Project Visual\Task_5\Debug\Task_5.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"E:\Roman\Project Visual\Task_5\Debug\Task_5.exe;#1" /manifest Debug\Task_5.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\Task_5.unsuccessfulbuild".
+         Touching "Debug\Task_5.lastbuildstate".
+     1>Done Building Project "E:\Roman\Project Visual\Task_5\Task_5\Task_5.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.33
