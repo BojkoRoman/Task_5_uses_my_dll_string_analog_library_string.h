@@ -5,27 +5,27 @@ using namespace std;
 
 void Welcome()
 {
-	cout << "Ïðîãðàìà ÿêà âèêîðèñòîâóº my_dll_string àíàëîã áiáëiîòåêè string.h (ôóíêöi¿ strcpy, strcat, ...) ìîâè Ñ.\n";
-	cout << "Öÿ ïðîãðàìà ïîÿñíþº ñóòü êîæíî¿ ôóíêöi¿ i äàº ìîæëèâiñòü ñïðîáóâàòè ¿õ."<<endl;
+	cout << "ÐŸÑ€Ð¾Ð³Ñ€Ð°Ð¼Ð° ÑÐºÐ° Ð²Ð¸ÐºÐ¾Ñ€Ð¸ÑÑ‚Ð¾Ð²ÑƒÑ” my_dll_string Ð°Ð½Ð°Ð»Ð¾Ð³ Ð±iÐ±Ð»iÐ¾Ñ‚ÐµÐºÐ¸ string.h (Ñ„ÑƒÐ½ÐºÑ†iÑ— strcpy, strcat, ...) Ð¼Ð¾Ð²Ð¸ Ð¡.\n";
+	cout << "Ð¦Ñ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð° Ð¿Ð¾ÑÑÐ½ÑŽÑ” ÑÑƒÑ‚ÑŒ ÐºÐ¾Ð¶Ð½Ð¾Ñ— Ñ„ÑƒÐ½ÐºÑ†iÑ— i Ð´Ð°Ñ” Ð¼Ð¾Ð¶Ð»Ð¸Ð²iÑÑ‚ÑŒ ÑÐ¿Ñ€Ð¾Ð±ÑƒÐ²Ð°Ñ‚Ð¸ Ñ—Ñ…."<<endl;
 	cout << "\t Copyright 2014 by Roman Bojko\n";
 }
 void Enter()
 {
 	int number;
 
-	cout << "Âèáåðiòü ÿêó ôóíêöiþ âè áóäå âèêîðèñòîâóâàòè : \n";
-	cout << "\tÔóíêö³þ strcpy  íàòèñíiòü 1.\n";
-	cout << "\tÔóíêö³þ strncpy íàòèñíiòü 2.\n";
-	cout << "\tÔóíêö³þ strcat  íàòèñíiòü 3.\n";
-	cout << "\tÔóíêö³þ strncat íàòèñíiòü 4.\n";
-	cout << "\tÔóíêö³þ strcmp  íàòèñíiòü 5.\n";
-	cout << "\tÔóíêö³þ strncmp íàòèñíiòü 6.\n";
+	cout << "Ð’Ð¸Ð±ÐµÑ€iÑ‚ÑŒ ÑÐºÑƒ Ñ„ÑƒÐ½ÐºÑ†iÑŽ Ð²Ð¸ Ð±ÑƒÐ´Ðµ Ð²Ð¸ÐºÐ¾Ñ€Ð¸ÑÑ‚Ð¾Ð²ÑƒÐ²Ð°Ñ‚Ð¸ : \n";
+	cout << "\tÐ¤ÑƒÐ½ÐºÑ†Ñ–ÑŽ strcpy  Ð½Ð°Ñ‚Ð¸ÑÐ½iÑ‚ÑŒ 1.\n";
+	cout << "\tÐ¤ÑƒÐ½ÐºÑ†Ñ–ÑŽ strncpy Ð½Ð°Ñ‚Ð¸ÑÐ½iÑ‚ÑŒ 2.\n";
+	cout << "\tÐ¤ÑƒÐ½ÐºÑ†Ñ–ÑŽ strcat  Ð½Ð°Ñ‚Ð¸ÑÐ½iÑ‚ÑŒ 3.\n";
+	cout << "\tÐ¤ÑƒÐ½ÐºÑ†Ñ–ÑŽ strncat Ð½Ð°Ñ‚Ð¸ÑÐ½iÑ‚ÑŒ 4.\n";
+	cout << "\tÐ¤ÑƒÐ½ÐºÑ†Ñ–ÑŽ strcmp  Ð½Ð°Ñ‚Ð¸ÑÐ½iÑ‚ÑŒ 5.\n";
+	cout << "\tÐ¤ÑƒÐ½ÐºÑ†Ñ–ÑŽ strncmp Ð½Ð°Ñ‚Ð¸ÑÐ½iÑ‚ÑŒ 6.\n";
 	cout << "\n\t EXIT Enter 0.\n";
 	cin >> number;
 	
 	switch(number){
 	    case 0:
-			 cout << "\t\t~Ïà-Ïà~"<<endl;
+			 cout << "\t\t~ÐŸÐ°-ÐŸÐ°~"<<endl;
 			 for( int i = 0; i < 80; ++i )
 			 {
 				 cout <<"-";
@@ -34,27 +34,27 @@ void Enter()
 			 exit(1);
 		break;
 		case 1: 
-			cout << "\tÂè âèáðàëè ôóíêöiþ strcpy \n\n";
+			cout << "\tÐ’Ð¸ Ð²Ð¸Ð±Ñ€Ð°Ð»Ð¸ Ñ„ÑƒÐ½ÐºÑ†iÑŽ strcpy \n\n";
 			MyStrCpy();  
 		break;
 		case 2:
-			cout << "\tÂè âèáðàëè ôóíêöiþ strncpy \n\n";
+			cout << "\tÐ’Ð¸ Ð²Ð¸Ð±Ñ€Ð°Ð»Ð¸ Ñ„ÑƒÐ½ÐºÑ†iÑŽ strncpy \n\n";
 			MyStrnCpy();
 		break;
 		case 3:
-			cout << "\tÂè âèáðàëè ôóíêöiþ strcat \n\n";
+			cout << "\tÐ’Ð¸ Ð²Ð¸Ð±Ñ€Ð°Ð»Ð¸ Ñ„ÑƒÐ½ÐºÑ†iÑŽ strcat \n\n";
 			MyStrCat();
 		break;
 		case 4:
-			cout << "\tÂè âèáðàëè ôóíêöiþ strncat \n\n";
+			cout << "\tÐ’Ð¸ Ð²Ð¸Ð±Ñ€Ð°Ð»Ð¸ Ñ„ÑƒÐ½ÐºÑ†iÑŽ strncat \n\n";
 			MyStrnCat();
 		break;
 		case 5:
-			cout << "\tÂè âèáðàëè ôóíêöiþ strcmp \n\n";
+			cout << "\tÐ’Ð¸ Ð²Ð¸Ð±Ñ€Ð°Ð»Ð¸ Ñ„ÑƒÐ½ÐºÑ†iÑŽ strcmp \n\n";
 			MyStrCmp();
 		break;
 		case 6:
-			cout << "\tÂè âèáðàëè ôóíêöiþ strncmp \n\n";
+			cout << "\tÐ’Ð¸ Ð²Ð¸Ð±Ñ€Ð°Ð»Ð¸ Ñ„ÑƒÐ½ÐºÑ†iÑŽ strncmp \n\n";
 			MyStrnCmp();
 		break;
 		default:
@@ -76,9 +76,9 @@ void ErrorExit()
 	int b;
 	while ( ( ! ( cin >> a ) ) || ( a < 0 ) || ( a > 2 ) || cin.peek() != '\n' )
 	{
-		cout << "\tÂè çðîáèëè ïîãàíèé âèá³ð\n";
-		cout << "\n\tÇàïóñòèòè ïðîãðàìó ùå ðàç..?\n\n";
-		cout << "\n\t1 ÒÀÊ ---- 2 Í³\n\n";
+		cout << "\tÐ’Ð¸ Ð·Ñ€Ð¾Ð±Ð¸Ð»Ð¸ Ð¿Ð¾Ð³Ð°Ð½Ð¸Ð¹ Ð²Ð¸Ð±Ñ–Ñ€\n";
+		cout << "\n\tÐ—Ð°Ð¿ÑƒÑÑ‚Ð¸Ñ‚Ð¸ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ñƒ Ñ‰Ðµ Ñ€Ð°Ð·..?\n\n";
+		cout << "\n\t1 Ð¢ÐÐš ---- 2 ÐÑ–\n\n";
 		cin.clear();
         cin.sync();
 		cin >> b;
@@ -89,7 +89,7 @@ void ErrorExit()
 			 Enter();
 		break;
 		case 2:
-			 cout << "\t\t~Ïà-Ïà~"<<endl;
+			 cout << "\t\t~ÐŸÐ°-ÐŸÐ°~"<<endl;
 			 for(int i = 0; i < 80; ++i)
 			 {
 				 cout <<"-";
@@ -109,13 +109,13 @@ void ErrorExit()
 void MyStrCpy()
 {
 	int a;
-	cout << "Ôóíêöiÿ Strcpy() âèêîðèñòîâóºòüñÿ äëÿ êîïiþâàííÿ âìiñòó îäíîãî ðÿäêà ó äðóãèé"<<endl;
+	cout << "Ð¤ÑƒÐ½ÐºÑ†iÑ Strcpy() Ð²Ð¸ÐºÐ¾Ñ€Ð¸ÑÑ‚Ð¾Ð²ÑƒÑ”Ñ‚ÑŒÑÑ Ð´Ð»Ñ ÐºÐ¾Ð¿iÑŽÐ²Ð°Ð½Ð½Ñ Ð²Ð¼iÑÑ‚Ñƒ Ð¾Ð´Ð½Ð¾Ð³Ð¾ Ñ€ÑÐ´ÐºÐ° Ñƒ Ð´Ñ€ÑƒÐ³Ð¸Ð¹"<<endl;
 	char string[255] = "Hello World!";  
 	 for(int i = 0; i < 80; ++i)
 			 {
 				 cout <<"-";
 			 }
-	cout <<"Îðèãiíàë Ðÿäêà :  ";
+	cout <<"ÐžÑ€Ð¸Ð³iÐ½Ð°Ð» Ð ÑÐ´ÐºÐ° :  ";
 	cout << string <<endl; 
      for(int i = 0; i < 80; ++i)
 			 {
@@ -123,7 +123,7 @@ void MyStrCpy()
 			 };
 	cin.clear();
 	cin.sync();
-	cout <<"Ââåäiòü ðÿäîê, ÿêèì âè çàìiíèòå ðÿäîê "<<string<<endl;
+	cout <<"Ð’Ð²ÐµÐ´iÑ‚ÑŒ Ñ€ÑÐ´Ð¾Ðº, ÑÐºÐ¸Ð¼ Ð²Ð¸ Ð·Ð°Ð¼iÐ½Ð¸Ñ‚Ðµ Ñ€ÑÐ´Ð¾Ðº "<<string<<endl;
 	char string1[255]; 
 	cin.getline( string1,255 ); 
 	 for(int i = 0; i < 80; ++i)
@@ -131,13 +131,13 @@ void MyStrCpy()
 				 cout <<"-";
 			 }
 	myStrcpy( string,string1 );
-	cout << "Ðåçóëüòàò : " <<string<<endl;
+	cout << "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ : " <<string<<endl;
 	 for(int i = 0; i < 80; ++i)
 			 {
 				 cout <<"-";
 			 }
-	cout << "\n\tÇàïóñòèòè ïðîãðàìó ùå ðàç..?\n\n";
-	cout << "\n\t1 ÒÀÊ ---- 2 Í³\n\n";
+	cout << "\n\tÐ—Ð°Ð¿ÑƒÑÑ‚Ð¸Ñ‚Ð¸ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ñƒ Ñ‰Ðµ Ñ€Ð°Ð·..?\n\n";
+	cout << "\n\t1 Ð¢ÐÐš ---- 2 ÐÑ–\n\n";
 
 	cin >> a;
 			switch(a)
@@ -147,7 +147,7 @@ void MyStrCpy()
 				Enter();
 				break;
 			case 2:
-				cout << "~Ïà-Ïà~"<<endl;
+				cout << "~ÐŸÐ°-ÐŸÐ°~"<<endl;
 				 for(int i = 0; i < 80; ++i)
 			 {
 				 cout <<"-";
@@ -164,13 +164,13 @@ void MyStrCpy()
 void MyStrnCpy()
 {
 	int a;
-	cout << "Ôóíêöiÿ Strncpy() âèêîðèñòîâóºòüñÿ äëÿ êîïiþâàííÿ  ' num ' ïåðøèõ ñèìâîëiâ ðÿäêà str2 ó ðÿäîê str1."<<endl;
+	cout << "Ð¤ÑƒÐ½ÐºÑ†iÑ Strncpy() Ð²Ð¸ÐºÐ¾Ñ€Ð¸ÑÑ‚Ð¾Ð²ÑƒÑ”Ñ‚ÑŒÑÑ Ð´Ð»Ñ ÐºÐ¾Ð¿iÑŽÐ²Ð°Ð½Ð½Ñ  ' num ' Ð¿ÐµÑ€ÑˆÐ¸Ñ… ÑÐ¸Ð¼Ð²Ð¾Ð»iÐ² Ñ€ÑÐ´ÐºÐ° str2 Ñƒ Ñ€ÑÐ´Ð¾Ðº str1."<<endl;
 	char string[255] = "Hello World!";  
 	 for(int i = 0; i < 80; ++i)
 			 {
 				 cout <<"-";
 			 }
-	cout <<"Îðèãiíàë Ðÿäêà :  ";
+	cout <<"ÐžÑ€Ð¸Ð³iÐ½Ð°Ð» Ð ÑÐ´ÐºÐ° :  ";
 	cout << string <<endl; 
      for(int i = 0; i < 80; ++i)
 			 {
@@ -178,14 +178,14 @@ void MyStrnCpy()
 			 }
 	cin.clear();
 	cin.sync();
-	cout <<"Ââåäiòü ðÿäîê, ÿêèì âè çàìiíèòå ðÿäîê "<<string<<endl;
+	cout <<"Ð’Ð²ÐµÐ´iÑ‚ÑŒ Ñ€ÑÐ´Ð¾Ðº, ÑÐºÐ¸Ð¼ Ð²Ð¸ Ð·Ð°Ð¼iÐ½Ð¸Ñ‚Ðµ Ñ€ÑÐ´Ð¾Ðº "<<string<<endl;
 	char string1[255]; 
 	cin.getline( string1,255 ); 
 	 for(int i = 0; i < 80; ++i)
 			 {
 				 cout <<"-";
 			 }
-	cout <<"Ââåäiòü êiëüêiñòü ïåðøèõ ñèìâîëiâ ðÿäêà : "<< string1 <<" ÿêèìè âè çàìiíèòå ðÿäîê "<<string<<endl;
+	cout <<"Ð’Ð²ÐµÐ´iÑ‚ÑŒ ÐºiÐ»ÑŒÐºiÑÑ‚ÑŒ Ð¿ÐµÑ€ÑˆÐ¸Ñ… ÑÐ¸Ð¼Ð²Ð¾Ð»iÐ² Ñ€ÑÐ´ÐºÐ° : "<< string1 <<" ÑÐºÐ¸Ð¼Ð¸ Ð²Ð¸ Ð·Ð°Ð¼iÐ½Ð¸Ñ‚Ðµ Ñ€ÑÐ´Ð¾Ðº "<<string<<endl;
 	int num;
 	cin >> num;
 	 for(int i = 0; i < 80; ++i)
@@ -193,13 +193,13 @@ void MyStrnCpy()
 				 cout <<"-";
 			 }
 	myStrncpy( string,string1,num );
-	cout << "Ðåçóëüòàò : " <<string<<endl;
+	cout << "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ : " <<string<<endl;
 	 for(int i = 0; i < 80; ++i)
 			 {
 				 cout <<"-";
 			 }
-	cout << "\n\tÇàïóñòèòè ïðîãðàìó ùå ðàç..?\n\n";
-	cout << "\n\t1 ÒÀÊ ---- 2 Í³\n\n";
+	cout << "\n\tÐ—Ð°Ð¿ÑƒÑÑ‚Ð¸Ñ‚Ð¸ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ñƒ Ñ‰Ðµ Ñ€Ð°Ð·..?\n\n";
+	cout << "\n\t1 Ð¢ÐÐš ---- 2 ÐÑ–\n\n";
 
 	cin >> a;
 			switch(a)
@@ -209,7 +209,7 @@ void MyStrnCpy()
 				Enter();
 				break;
 			case 2:
-				cout << "~Ïà-Ïà~"<<endl;
+				cout << "~ÐŸÐ°-ÐŸÐ°~"<<endl;
 				 for(int i = 0; i < 80; ++i)
 			 {
 				 cout <<"-";
@@ -226,13 +226,13 @@ void MyStrnCpy()
 void MyStrCat()
 {
 	int a;
-	cout << "Ôóíêöiÿ Strcat() âèêîðèñòîâóºòüñÿ äëÿ äîäàâàííÿ ðÿäêà str2 äî  ðÿäêà str1."<<endl;
+	cout << "Ð¤ÑƒÐ½ÐºÑ†iÑ Strcat() Ð²Ð¸ÐºÐ¾Ñ€Ð¸ÑÑ‚Ð¾Ð²ÑƒÑ”Ñ‚ÑŒÑÑ Ð´Ð»Ñ Ð´Ð¾Ð´Ð°Ð²Ð°Ð½Ð½Ñ Ñ€ÑÐ´ÐºÐ° str2 Ð´Ð¾  Ñ€ÑÐ´ÐºÐ° str1."<<endl;
 	char string[255] = "Hello World!_";  
 	 for(int i = 0; i < 80; ++i)
 			 {
 				 cout <<"-";
 			 }
-	cout <<"Îðèãiíàë Ðÿäêà :  ";
+	cout <<"ÐžÑ€Ð¸Ð³iÐ½Ð°Ð» Ð ÑÐ´ÐºÐ° :  ";
 	cout << string <<endl; 
      for(int i = 0; i < 80; ++i)
 			 {
@@ -240,7 +240,7 @@ void MyStrCat()
 			 }
 	cin.clear();
 	cin.sync();
-	cout <<"Ââåäiòü ðÿäîê, ÿêèé âè ïðèºäíàºòå äî  ðÿäêà "<<string<<endl;
+	cout <<"Ð’Ð²ÐµÐ´iÑ‚ÑŒ Ñ€ÑÐ´Ð¾Ðº, ÑÐºÐ¸Ð¹ Ð²Ð¸ Ð¿Ñ€Ð¸Ñ”Ð´Ð½Ð°Ñ”Ñ‚Ðµ Ð´Ð¾  Ñ€ÑÐ´ÐºÐ° "<<string<<endl;
 	char string1[255]; 
 	cin.getline( string1,255 ); 
 	 for(int i = 0; i < 80; ++i)
@@ -248,13 +248,13 @@ void MyStrCat()
 				 cout <<"-";
 			 }
 	myStrcat( string,string1);
-	cout << "Ðåçóëüòàò : " <<string<<endl;
+	cout << "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ : " <<string<<endl;
 	 for(int i = 0; i < 80; ++i)
 			 {
 				 cout <<"-";
 			 }
-	cout << "\n\tÇàïóñòèòè ïðîãðàìó ùå ðàç..?\n\n";
-	cout << "\n\t1 ÒÀÊ ---- 2 Í³\n\n";
+	cout << "\n\tÐ—Ð°Ð¿ÑƒÑÑ‚Ð¸Ñ‚Ð¸ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ñƒ Ñ‰Ðµ Ñ€Ð°Ð·..?\n\n";
+	cout << "\n\t1 Ð¢ÐÐš ---- 2 ÐÑ–\n\n";
 
 	cin >> a;
 			switch(a)
@@ -264,7 +264,7 @@ void MyStrCat()
 				Enter();
 				break;
 			case 2:
-				cout << "~Ïà-Ïà~"<<endl;
+				cout << "~ÐŸÐ°-ÐŸÐ°~"<<endl;
 				 for(int i = 0; i < 80; ++i)
 			 {
 				 cout <<"-";
@@ -281,13 +281,13 @@ void MyStrCat()
 void MyStrnCat()
 {
 	int a;
-	cout << "Ôóíêöiÿ Strncat() âèêîðèñòîâóºòüñÿ äëÿ äîäàâàííÿ  ' num ' ïåðøèõ ñèìâîë³â ðÿäêà str2 äî ðÿäêà str1."<<endl;
+	cout << "Ð¤ÑƒÐ½ÐºÑ†iÑ Strncat() Ð²Ð¸ÐºÐ¾Ñ€Ð¸ÑÑ‚Ð¾Ð²ÑƒÑ”Ñ‚ÑŒÑÑ Ð´Ð»Ñ Ð´Ð¾Ð´Ð°Ð²Ð°Ð½Ð½Ñ  ' num ' Ð¿ÐµÑ€ÑˆÐ¸Ñ… ÑÐ¸Ð¼Ð²Ð¾Ð»Ñ–Ð² Ñ€ÑÐ´ÐºÐ° str2 Ð´Ð¾ Ñ€ÑÐ´ÐºÐ° str1."<<endl;
 	char string[255] = "Hello World!_";  
 	 for(int i = 0; i < 80; ++i)
 			 {
 				 cout <<"-";
 			 }
-	cout <<"Îðèãiíàë Ðÿäêà :  ";
+	cout <<"ÐžÑ€Ð¸Ð³iÐ½Ð°Ð» Ð ÑÐ´ÐºÐ° :  ";
 	cout << string <<endl; 
      for(int i = 0; i < 80; ++i)
 			 {
@@ -295,14 +295,14 @@ void MyStrnCat()
 			 }
 	cin.clear();
 	cin.sync();
-	cout <<"Ââåäiòü ðÿäîê, ÿêèé âè ïðèºäíàºòå äî  ðÿäêà "<<string<<endl;
+	cout <<"Ð’Ð²ÐµÐ´iÑ‚ÑŒ Ñ€ÑÐ´Ð¾Ðº, ÑÐºÐ¸Ð¹ Ð²Ð¸ Ð¿Ñ€Ð¸Ñ”Ð´Ð½Ð°Ñ”Ñ‚Ðµ Ð´Ð¾  Ñ€ÑÐ´ÐºÐ° "<<string<<endl;
 	char string1[255]; 
 	cin.getline( string1,255 ); 
 	 for(int i = 0; i < 80; ++i)
 			 {
 				 cout <<"-";
 			 }
-	cout <<"Ââåäiòü êiëüêiñòü ïåðøèõ ñèìâîëiâ ðÿäêà : "<< string1 <<" ÿêi âè ïðèºäíàºòå äî ðÿäêà "<<string<<endl;
+	cout <<"Ð’Ð²ÐµÐ´iÑ‚ÑŒ ÐºiÐ»ÑŒÐºiÑÑ‚ÑŒ Ð¿ÐµÑ€ÑˆÐ¸Ñ… ÑÐ¸Ð¼Ð²Ð¾Ð»iÐ² Ñ€ÑÐ´ÐºÐ° : "<< string1 <<" ÑÐºi Ð²Ð¸ Ð¿Ñ€Ð¸Ñ”Ð´Ð½Ð°Ñ”Ñ‚Ðµ Ð´Ð¾ Ñ€ÑÐ´ÐºÐ° "<<string<<endl;
 	int num;
 	cin >> num;
 	 for(int i = 0; i < 80; ++i)
@@ -310,13 +310,13 @@ void MyStrnCat()
 				 cout <<"-";
 			 }
 	myStrncat( string,string1,num);
-	cout << "Ðåçóëüòàò : " <<string<<endl;
+	cout << "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ : " <<string<<endl;
 	 for(int i = 0; i < 80; ++i)
 			 {
 				 cout <<"-";
 			 }
-	cout << "\n\tÇàïóñòèòè ïðîãðàìó ùå ðàç..?\n\n";
-	cout << "\n\t1 ÒÀÊ ---- 2 Í³\n\n";
+	cout << "\n\tÐ—Ð°Ð¿ÑƒÑÑ‚Ð¸Ñ‚Ð¸ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ñƒ Ñ‰Ðµ Ñ€Ð°Ð·..?\n\n";
+	cout << "\n\t1 Ð¢ÐÐš ---- 2 ÐÑ–\n\n";
 
 	cin >> a;
 			switch(a)
@@ -326,7 +326,7 @@ void MyStrnCat()
 				Enter();
 				break;
 			case 2:
-				cout << "~Ïà-Ïà~"<<endl;
+				cout << "~ÐŸÐ°-ÐŸÐ°~"<<endl;
 				 for(int i = 0; i < 80; ++i)
 			 {
 				 cout <<"-";
@@ -343,13 +343,13 @@ void MyStrnCat()
 void MyStrCmp()
 {
 	int a;
-	cout << "Ôóíêöiÿ Strcmp() âèêîðèñòîâóºòüñÿ äëÿ ïîð³âíÿííÿ äâîõ ðÿäê³â."<<endl;
+	cout << "Ð¤ÑƒÐ½ÐºÑ†iÑ Strcmp() Ð²Ð¸ÐºÐ¾Ñ€Ð¸ÑÑ‚Ð¾Ð²ÑƒÑ”Ñ‚ÑŒÑÑ Ð´Ð»Ñ Ð¿Ð¾Ñ€Ñ–Ð²Ð½ÑÐ½Ð½Ñ Ð´Ð²Ð¾Ñ… Ñ€ÑÐ´ÐºÑ–Ð²."<<endl;
 	char string[255] = "Hello World!";  
 	 for(int i = 0; i < 80; ++i)
 			 {
 				 cout <<"-";
 			 }
-	cout <<"Îðèãiíàë Ðÿäêà :  ";
+	cout <<"ÐžÑ€Ð¸Ð³iÐ½Ð°Ð» Ð ÑÐ´ÐºÐ° :  ";
 	cout << string <<endl; 
      for(int i = 0; i < 80; ++i)
 			 {
@@ -357,27 +357,27 @@ void MyStrCmp()
 			 }
 	cin.clear();
 	cin.sync();
-	cout <<"Ââåäiòü ñâié ðÿäîê, äëÿ ïîð³âíÿííÿ ç ðÿäêîì "<<string<<endl;
+	cout <<"Ð’Ð²ÐµÐ´iÑ‚ÑŒ ÑÐ²iÐ¹ Ñ€ÑÐ´Ð¾Ðº, Ð´Ð»Ñ Ð¿Ð¾Ñ€Ñ–Ð²Ð½ÑÐ½Ð½Ñ Ð· Ñ€ÑÐ´ÐºÐ¾Ð¼ "<<string<<endl;
 	char string1[255]; 
 	cin.getline( string1,255 ); 
 	 for(int i = 0; i < 80; ++i)
 			 {
 				 cout <<"-";
 			 }
-	cout <<"ßêùî ðÿäêè ðiâíi âèâåäåòüñÿ ' Ðiâíi ', ÿêùî í³, òîä³ íà åêðàíi áóäå ' Íåðiâíi '."<<endl;
+	cout <<"Ð¯ÐºÑ‰Ð¾ Ñ€ÑÐ´ÐºÐ¸ Ñ€iÐ²Ð½i Ð²Ð¸Ð²ÐµÐ´ÐµÑ‚ÑŒÑÑ ' Ð iÐ²Ð½i ', ÑÐºÑ‰Ð¾ Ð½Ñ–, Ñ‚Ð¾Ð´Ñ– Ð½Ð° ÐµÐºÑ€Ð°Ð½i Ð±ÑƒÐ´Ðµ ' ÐÐµÑ€iÐ²Ð½i '."<<endl;
 	if(myStrcmp( string,string1) == 0 )
 	{
-		cout << "Ðÿäêè Ðiâíi" <<endl;
+		cout << "Ð ÑÐ´ÐºÐ¸ Ð iÐ²Ð½i" <<endl;
 	}else
 	{
-		cout << "Ðÿäêè Íåðiâíi" <<endl;
+		cout << "Ð ÑÐ´ÐºÐ¸ ÐÐµÑ€iÐ²Ð½i" <<endl;
 	}
 	 for(int i = 0; i < 80; ++i)
 			 {
 				 cout <<"-";
 			 }
-	cout << "\n\tÇàïóñòèòè ïðîãðàìó ùå ðàç..?\n\n";
-	cout << "\n\t1 ÒÀÊ ---- 2 Í³\n\n";
+	cout << "\n\tÐ—Ð°Ð¿ÑƒÑÑ‚Ð¸Ñ‚Ð¸ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ñƒ Ñ‰Ðµ Ñ€Ð°Ð·..?\n\n";
+	cout << "\n\t1 Ð¢ÐÐš ---- 2 ÐÑ–\n\n";
 
 	cin >> a;
 			switch(a)
@@ -387,7 +387,7 @@ void MyStrCmp()
 				Enter();
 				break;
 			case 2:
-				cout << "~Ïà-Ïà~"<<endl;
+				cout << "~ÐŸÐ°-ÐŸÐ°~"<<endl;
 				 for(int i = 0; i < 80; ++i)
 			 {
 				 cout <<"-";
@@ -404,13 +404,13 @@ void MyStrCmp()
 void MyStrnCmp()
 {
 	int a;
-	cout << "Ôóíêöiÿ Strncmp() âèêîðèñòîâóºòüñÿ äëÿ ïîð³âíÿííÿ ' num ' ïåðøèõ ñèìâîë³â äâîõ ðÿäê³â."<<endl;
+	cout << "Ð¤ÑƒÐ½ÐºÑ†iÑ Strncmp() Ð²Ð¸ÐºÐ¾Ñ€Ð¸ÑÑ‚Ð¾Ð²ÑƒÑ”Ñ‚ÑŒÑÑ Ð´Ð»Ñ Ð¿Ð¾Ñ€Ñ–Ð²Ð½ÑÐ½Ð½Ñ ' num ' Ð¿ÐµÑ€ÑˆÐ¸Ñ… ÑÐ¸Ð¼Ð²Ð¾Ð»Ñ–Ð² Ð´Ð²Ð¾Ñ… Ñ€ÑÐ´ÐºÑ–Ð²."<<endl;
 	char string[255] = "Hello World!";  
 	 for(int i = 0; i < 80; ++i)
 			 {
 				 cout <<"-";
 			 }
-	cout <<"Îðèãiíàë Ðÿäêà :  ";
+	cout <<"ÐžÑ€Ð¸Ð³iÐ½Ð°Ð» Ð ÑÐ´ÐºÐ° :  ";
 	cout << string <<endl; 
      for(int i = 0; i < 80; ++i)
 			 {
@@ -418,39 +418,39 @@ void MyStrnCmp()
 			 }
 	cin.clear();
 	cin.sync();
-	cout <<"Ââåäiòü ñâié ðÿäîê, äëÿ ïîð³âíÿííÿ ç ðÿäêîì "<<string<<endl;
+	cout <<"Ð’Ð²ÐµÐ´iÑ‚ÑŒ ÑÐ²iÐ¹ Ñ€ÑÐ´Ð¾Ðº, Ð´Ð»Ñ Ð¿Ð¾Ñ€Ñ–Ð²Ð½ÑÐ½Ð½Ñ Ð· Ñ€ÑÐ´ÐºÐ¾Ð¼ "<<string<<endl;
 	char string1[255]; 
 	cin.getline( string1,255 ); 
 	 for(int i = 0; i < 80; ++i)
 			 {
 				 cout <<"-";
 			 }
-	 cout <<"Ââåäiòü êiëüêiñòü ïåðøèõ ñèìâîëiâ ðÿäêà : "<< string1 <<" ÿêi âè ïîðiâíÿºòå ç ' num ' ïåðøèìè ñèìâîëàìè ðÿäêà "<<string<<endl;
+	 cout <<"Ð’Ð²ÐµÐ´iÑ‚ÑŒ ÐºiÐ»ÑŒÐºiÑÑ‚ÑŒ Ð¿ÐµÑ€ÑˆÐ¸Ñ… ÑÐ¸Ð¼Ð²Ð¾Ð»iÐ² Ñ€ÑÐ´ÐºÐ° : "<< string1 <<" ÑÐºi Ð²Ð¸ Ð¿Ð¾Ñ€iÐ²Ð½ÑÑ”Ñ‚Ðµ Ð· ' num ' Ð¿ÐµÑ€ÑˆÐ¸Ð¼Ð¸ ÑÐ¸Ð¼Ð²Ð¾Ð»Ð°Ð¼Ð¸ Ñ€ÑÐ´ÐºÐ° "<<string<<endl;
 	int num;
 	cin >> num;
 	 for(int i = 0; i < 80; ++i)
 			 {
 				 cout <<"-";
 			 }
-	cout <<"ßêùî ïåðø³ "<<num<<" ñèìâîëè ðÿäêà "<<string<<" ðiâíi ç ïåðøèìè "<<num<<" ñèìâîëàìè ðÿäêà "<<string1<<" ,òîä³ âèâåäåòüñÿ ' Ðiâíi ', ÿêùî í³, òîä³ íà åêðàíi áóäå ' Íåðiâíi '."<<endl;
+	cout <<"Ð¯ÐºÑ‰Ð¾ Ð¿ÐµÑ€ÑˆÑ– "<<num<<" ÑÐ¸Ð¼Ð²Ð¾Ð»Ð¸ Ñ€ÑÐ´ÐºÐ° "<<string<<" Ñ€iÐ²Ð½i Ð· Ð¿ÐµÑ€ÑˆÐ¸Ð¼Ð¸ "<<num<<" ÑÐ¸Ð¼Ð²Ð¾Ð»Ð°Ð¼Ð¸ Ñ€ÑÐ´ÐºÐ° "<<string1<<" ,Ñ‚Ð¾Ð´Ñ– Ð²Ð¸Ð²ÐµÐ´ÐµÑ‚ÑŒÑÑ ' Ð iÐ²Ð½i ', ÑÐºÑ‰Ð¾ Ð½Ñ–, Ñ‚Ð¾Ð´Ñ– Ð½Ð° ÐµÐºÑ€Ð°Ð½i Ð±ÑƒÐ´Ðµ ' ÐÐµÑ€iÐ²Ð½i '."<<endl;
 	for(int i = 0; i < 80; ++i)
 			 {
 				 cout <<"-";
 			 }
-	cout << "\t Ðåçóëüòàò : ";
+	cout << "\t Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ : ";
 	if(myStrncmp( string,string1,num) == 0 )
 	{
-		cout << "Ðÿäêè Ðiâíi" <<endl;
+		cout << "Ð ÑÐ´ÐºÐ¸ Ð iÐ²Ð½i" <<endl;
 	}else
 	{
-		cout << "Ðÿäêè Íåðiâíi" <<endl;
+		cout << "Ð ÑÐ´ÐºÐ¸ ÐÐµÑ€iÐ²Ð½i" <<endl;
 	}
 	 for(int i = 0; i < 80; ++i)
 			 {
 				 cout <<"-";
 			 }
-	cout << "\n\tÇàïóñòèòè ïðîãðàìó ùå ðàç..?\n\n";
-	cout << "\n\t1 ÒÀÊ ---- 2 Í³\n\n";
+	cout << "\n\tÐ—Ð°Ð¿ÑƒÑÑ‚Ð¸Ñ‚Ð¸ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ñƒ Ñ‰Ðµ Ñ€Ð°Ð·..?\n\n";
+	cout << "\n\t1 Ð¢ÐÐš ---- 2 ÐÑ–\n\n";
 
 	cin >> a;
 			switch(a)
@@ -460,7 +460,7 @@ void MyStrnCmp()
 				Enter();
 				break;
 			case 2:
-				cout << "~Ïà-Ïà~"<<endl;
+				cout << "~ÐŸÐ°-ÐŸÐ°~"<<endl;
 				 for(int i = 0; i < 80; ++i)
 			 {
 				 cout <<"-";
